@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 120px;
+    height: 56px;
+}
+
+.header-left span {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+
+.header-right button {
+    margin-left: 24px;
+    padding: 6px 12px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3 transform 0.3s;
+}
+
+
+figure img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+
+}
+
+.header-right button:hover {
+    color: #ccc;
+    transform: scale(1.1)
+}
