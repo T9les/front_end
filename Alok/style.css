@@ -1,43 +1,42 @@
-body {
-    margin: 0;
-    background-color: white;
-} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alok Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 120px;
-    height: 56px;
-}
+        <div class= "header-left">
+            <span>Alok</span>
+        </div>
 
-.header-left span {
-    font-size: 18px;
-    line-height: 32px;
-    font-weight: bold;
-}
+        <nav class= "header-right">
+            <button onclick="animateleage()">Sobre</button>
+            <button>Projetos</button>
+            <button>Contato</button>
+        </nav>
 
-.header-right button {
-    margin-left: 24px;
-    padding: 6px 12px;
-    background-color: transparent;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    text-decoration: none;
-    transition: color 0.3s, transform 0.3s;
-}
+        </header>
 
-figure img {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-}
 
-.header-right button:hover {
-    color: #ccc;
-    transform: scale(1.1);
-}
+
+        </main>
+       <figure>
+        <figcaption>
+            <img src="https://d3vhc53cl8e8km.cloudfront.net/hello-staging/wp-content/uploads/2015/08/03175717/d614c730-5ba0-11ed-b991-0ee6b8365494-972x597.jpg" alt="Imagem do DJ Alok">
+        </figcaption>
+
+       </figure>
+      
+
+     </body>
+
+
+    <script src= "script.js"></script>
+</body>
+
+</html>
