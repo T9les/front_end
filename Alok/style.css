@@ -1,8 +1,7 @@
 body {
     margin: 0;
     background-color: white;
-}
-
+} 
 
 header {
     display: flex;
@@ -18,7 +17,6 @@ header {
     font-weight: bold;
 }
 
-
 .header-right button {
     margin-left: 24px;
     padding: 6px 12px;
@@ -29,19 +27,17 @@ header {
     cursor: pointer;
     font-size: 18px;
     text-decoration: none;
-    transition: color 0.3 transform 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
-
-figure img{
+figure img {
     position: absolute;
     right: 0;
     top: 0;
     z-index: -1;
-
 }
 
 .header-right button:hover {
     color: #ccc;
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
