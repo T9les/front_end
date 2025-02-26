@@ -104,7 +104,6 @@
     color: #333;
   }
 
-
   /*style do abount section*/
   .abount{
       padding: 54px 120px 42px;
@@ -117,4 +116,57 @@
       color: black;
       margin-bottom: 32px;
       margin-top: 0;
+  }
+
+  .abount p{
+    font-size: 24px;
+    line-height: 1.5;
+    color: black;
+    margin-bottom: 32px;
+  }
+
+  .abount .buttons{
+    display: flex;
+    gap: 10px;
+  }
+
+  .abount .buttons .primary{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    height: 43px;
+    cursor: pointer;
+  }
+
+  .abount .buttons .secundary{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    border-radius: 8px;
+    padding: 8px 24px;
+    height: 43px;
+    cursor: pointer;
+  }
+
+  /*rotação*/
+  .abount .buttons .primary:hover{
+    color: #ccc;
+    transform: rotate(10deg);
+    transition: transform 0.3s ease;
+  }
+
+  .abount .buttons .secundary:hover{
+    color: #ccc;
+    background-color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(10deg);
+    transition: background-color 0.3, box-shandow 0.3s, transform 0.3s;
+  }
+
+  .abount .buttons .secundary:hover{
+    color: #fff;
+    transform: translatex(10px);
+    transition: transform 0.3s ease-in-out;
   }
