@@ -1,14 +1,14 @@
 
 /* Define color variables */
 :root {
-    --color-light-background: #f9faff;
-    --color-light-gray: #black;
+    --color-light-background: black;
+    --color-light-gray: black;
     --color-light-title: black;
   }
   
   body {
     margin: 0;
-    background-color:  #f9faff;
+    background-color:  gray;
   }
   
   figure img {
@@ -132,7 +132,7 @@
 
   .abount .buttons .primary{
     background-color: black;
-    color: white;
+    color: gray;
     border: none;
     border-radius: 8px;
     padding: 8px 24px;
@@ -162,11 +162,197 @@
     background-color: black;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transform: scale(10deg);
-    transition: background-color 0.3, box-shandow 0.3s, transform 0.3s;
+    transition: background-color 0.3s , box-shandow 0.3s, transform 0.3s;
   }
 
   .abount .buttons .secundary:hover{
-    color: #fff;
+    color: gray;
     transform: translatex(10px);
     transition: transform 0.3s ease-in-out;
+  }
+
+  /*style projetcs*/
+  .projetcs h2{
+    display: inline-block;
+    position: relative;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 80px;
+
+  }
+
+  .projetcs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto; /*Arrumar conforme o do Ariel*/
+    justify-content: center; /*Arrumar conforme o do Ariel*/
+    align-items: center;
+  }
+
+  .projetcs h2::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: black;
+  }
+
+  /*Primeiro card*/
+  .card {
+    display: flex;
+    background: gray;
+    width: 992px;
+    height: 524px;
+    border-radius: 24px;
+    border: solid 1px black;
+    overflow: hidden;
+  }
+  
+  .card-reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .card-left {
+    flex: 1;
+    border-radius: 24px 0 0 24px;
+    padding: 132px 24px;
+  }
+  
+  .card-left h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    margin-top: 0;
+  }
+  
+  .card-left p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 24px;
+  }
+  
+  .card-left button {
+    border-radius: 24px;
+  }
+  
+  .card-right {
+    flex: 1;
+    border-radius: 0 24px 24px 0;
+  }
+  
+  /*.card-right img {
+    border-radius: 0 24px 24px 0;
+  }*/
+
+  .card-button {
+    border-radius: 24px;
+    background-color: gray;
+  }
+
+  /*Segundo card*/
+  .card2 {
+    display: flex;
+    background: gray;
+    width: 992px;
+    height: 524px;
+    border-radius: 24px;
+    border: solid 1px black;
+    overflow: hidden;
+  }
+
+  .card-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .card-left {
+    flex: 1;
+    border-radius: 24px 0 0 24px;
+    padding: 132px 24px;
+  }
+
+  .card-left h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    margin-top: 0;
+  }
+
+  .card-left p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 24px;
+  }
+
+  .card-left button {
+    border-radius: 24px;
+  }
+
+  .card-right {
+    flex: 1;
+    border-radius: 0 24px 24px 0;
+  }
+
+  /*.card-right img {
+    border-radius: 0 24px 24px 0;
+  }*/
+
+  .card-button {
+    border-radius: 24px;
+    background-color: gray;
+  }
+
+  /*Terceiro card*/
+  .card3 {
+    display: flex;
+    background: gray;
+    width: 992px;
+    height: 524px;
+    border-radius: 24px;
+    border: solid 1px black;
+    overflow: hidden;
+  }
+
+  .card-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .card-left {
+    flex: 1;
+    border-radius: 24px 0 0 24px;
+    padding: 132px 24px;
+  }
+
+  .card-left h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    margin-top: 0;
+  }
+
+  .card-left p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 24px;
+  }
+
+  .card-left button {
+    border-radius: 24px;
+  }
+
+  .card-right {
+    flex: 1;
+    border-radius: 0 24px 24px 0;
+  }
+
+  /*.card-right img {
+    border-radius: 0 24px 24px 0;
+  }*/
+
+  .card-button {
+    border-radius: 24px;
+    background-color: gray;
   }
