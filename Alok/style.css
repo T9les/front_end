@@ -1,14 +1,12 @@
-
-/* Define color variables */
+/* Define color variaveis */
 :root {
-    --color-light-background: black;
-    --color-light-gray: black;
-    --color-light-title: black;
+    --letras: black;
+    --background: gray;
   }
   
   body {
     margin: 0;
-    background-color:  gray;
+    background-color: var(--background); /*Cor de fundo*/ 
   }
   
   figure img {
@@ -30,7 +28,7 @@
   .header-left span {
     font-size: 18px;
     line-height: 32px;
-    color: var(--color-light-title);
+    color: var(--letras);
     font-weight: bold;
   }
   
@@ -52,9 +50,7 @@
     transform: scale(1.1); /* Dá um leve efeito de aumento ao passar o mouse */
   }
   
-  
   /* Header alterado */
-  
   /* Header */
   header {
     display: flex;
@@ -67,7 +63,7 @@
   .header-left h1 {
     font-size: 18px;
     line-height: 32px;
-    color: var(--color-light-title);
+    color: var(--letras);
     font-weight: bold;
   }
   
@@ -113,7 +109,7 @@
   .abount h2{
       font-weight:bold;
       font-size: 64px;
-      color: black;
+      color: var(--letras);
       margin-bottom: 32px;
       margin-top: 0;
   }
@@ -121,7 +117,7 @@
   .abount p{
     font-size: 24px;
     line-height: 1.5;
-    color: black;
+    color: var(--letras);
     margin-bottom: 32px;
   }
 
@@ -130,8 +126,8 @@
     gap: 10px;
   }
 
-  .abount .buttons .primary{
-    background-color: black;
+  .primary{
+    background-color: var(--letras);
     color: gray;
     border: none;
     border-radius: 8px;
@@ -142,8 +138,8 @@
 
   .abount .buttons .secundary{
     background-color: transparent;
-    border: 2px solid black;
-    color: black;
+    border: 2px solid var(--letras);
+    color: var(--letras);
     border-radius: 8px;
     padding: 8px 24px;
     height: 43px;
@@ -159,7 +155,7 @@
 
   .abount .buttons .secundary:hover{
     color: #ccc;
-    background-color: black;
+    background-color: var(--letras);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transform: scale(10deg);
     transition: background-color 0.3s , box-shandow 0.3s, transform 0.3s;
@@ -172,25 +168,33 @@
   }
 
   /*style projetcs*/
-  .projetcs h2{
+  .underline{
     display: inline-block;
     position: relative;
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 80px;
-
+    margin-bottom: 16px;
+    margin-top: 0;
   }
 
-  .projetcs{
+  .projects,
+  .contact {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 auto; /*Arrumar conforme o do Ariel*/
-    justify-content: center; /*Arrumar conforme o do Ariel*/
     align-items: center;
+    gap: 80px;
+    margin-bottom: 144px;
   }
 
-  .projetcs h2::after{
+  .projetcs {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 144px;
+  }
+
+  .underline::after{
     content: "";
     position: absolute;
     bottom: -10px;
@@ -198,17 +202,17 @@
     transform: translateX(-50%);
     width: 50%;
     height: 2px;
-    background-color: black;
+    background-color: var(--background);
   }
 
   /*Primeiro card*/
   .card {
     display: flex;
-    background: gray;
+    background: var(--background);
     width: 992px;
     height: 524px;
     border-radius: 24px;
-    border: solid 1px black;
+    border: solid 1px var(--letras);
     overflow: hidden;
   }
   
@@ -231,36 +235,33 @@
   
   .card-left p {
     font-size: 18px;
-    color: black;
+    color: var(--letras);
     margin-bottom: 24px;
   }
   
   .card-left button {
     border-radius: 24px;
+    background-color: var(--background);
   }
   
   .card-right {
     flex: 1;
     border-radius: 0 24px 24px 0;
   }
-  
-  /*.card-right img {
-    border-radius: 0 24px 24px 0;
-  }*/
 
   .card-button {
     border-radius: 24px;
-    background-color: gray;
+    background-color: var(--background);
   }
 
   /*Segundo card*/
   .card2 {
     display: flex;
-    background: gray;
+    background: var(--background);
     width: 992px;
     height: 524px;
     border-radius: 24px;
-    border: solid 1px black;
+    border: solid 1px var(--letras);
     overflow: hidden;
   }
 
@@ -283,22 +284,19 @@
 
   .card-left p {
     font-size: 18px;
-    color: black;
+    color: var(--letras);
     margin-bottom: 24px;
   }
 
   .card-left button {
     border-radius: 24px;
+    background-color: var(--background);
   }
 
   .card-right {
     flex: 1;
     border-radius: 0 24px 24px 0;
   }
-
-  /*.card-right img {
-    border-radius: 0 24px 24px 0;
-  }*/
 
   .card-button {
     border-radius: 24px;
@@ -308,11 +306,11 @@
   /*Terceiro card*/
   .card3 {
     display: flex;
-    background: gray;
+    background: var(--background);
     width: 992px;
     height: 524px;
     border-radius: 24px;
-    border: solid 1px black;
+    border: solid 1px var(--letras);
     overflow: hidden;
   }
 
@@ -335,7 +333,7 @@
 
   .card-left p {
     font-size: 18px;
-    color: black;
+    color: var(--letras);
     margin-bottom: 24px;
   }
 
@@ -348,11 +346,48 @@
     border-radius: 0 24px 24px 0;
   }
 
-  /*.card-right img {
-    border-radius: 0 24px 24px 0;
-  }*/
-
   .card-button {
     border-radius: 24px;
     background-color: gray;
+  }
+
+  /*style form*/
+  .form-contact {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 24px;
+  }
+
+  .form-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-input label {
+    margin-bottom: 8px;
+    color: var(--letras);
+    font-size: 16px;
+  }
+
+  .form-input input{
+    background-color: var(--background);
+    border-radius: 8px;
+    border: solid 1px var(--background);
+    height: 40px;
+    padding-left: 8px;
+    line-height: 40px;
+  }
+
+  .form-input textarea{
+    background-color: var(--background);
+    border-radius: 8px;
+    border: solid 1px var(--background);
+    height: 160px;
+    line-height: 16px;
+  }
+
+  .form-contact .button{
+    display: flex;
+    flex-direction: column;
   }
