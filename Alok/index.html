@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,19 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Versão 1 -->
-    <!--<header>
-      <div class="header-left">
-        <span>Alok</span>
-      </div>
-      <nav class="header-right">
-        <button>Sobre</button>
-        <button>Projetos</button>
-        <button>Contato</button>
-      </nav>
-    </header>-->
 
-    <!-- //Versão 2 -->
     <header>
       <div class="header-left">
         <h1>Alok</h1   >
@@ -40,7 +28,6 @@
           src="https://i.pinimg.com/736x/c3/cd/7f/c3cd7f51bf07f8209c107f5785c52cdf.jpg"
           alt="Imagem do DJ Alok"
         />
-        <!-- <figcaption>Imagem do cantor de rap Mano Brown</figcaption> -->
       </figure>
 
       <section class="abount">
@@ -59,6 +46,7 @@
         </section>
 
         <section class="projetcs">
+          <h2 class="underline"></h2>
           <h2>Projetos</h2>
 
           <!--primeiro card-->
@@ -78,32 +66,27 @@
             </div>
           </div>
 
-          <br><br>
-
           <!--segundo card-->
           <div class="card2" style="flex-direction: row-reverse;">
             <div class="card-left">
-              <h3>Alok</h3>
-              <p>Alok, DJ e produtor musical brasileiro, é também engajado em projetos sociais e ambientais. 
-                A Instituição Alok apoia crianças e jovens em situação de vulnerabilidade,
-                oferecendo recursos educacionais e culturais. Ele também promove a conscientização sobre saúde mental,
-                sustentabilidade e o uso responsável dos recursos naturais, consolidando-se como referência tanto na música quanto em ações sociais.</p>
+              <h3>Projetos Musicais de Alok</h3>
+              <p>Alok é um dos DJs mais influentes do mundo, conhecido por hits como Hear Me Now.
+                Além de produzir sucessos e colaborar com artistas renomados, ele comanda a gravadora CONTROVERSIA Records, apoiando novos talentos.
+                Seus shows trazem tecnologia imersiva e ele se apresenta em grandes festivais como Tomorrowland e Rock in Rio.</p>
+                <button class="card-button">Ver Projeto</button>
             </div>
             <div class="card-right">
               <img src="https://i.pinimg.com/736x/38/8d/6c/388d6c103415f133cf04092d1b076203.jpg" alt="Imagem DJ Alok Spotfy">
             </div>
           </div>
 
-          <br><br>
-
           <!--terceiro card-->
           <div class="card3">
             <div class="card-left">
-              <h3>Alok</h3>
-              <p>Alok, DJ e produtor musical brasileiro, é também engajado em projetos sociais e ambientais. 
-                A Instituição Alok apoia crianças e jovens em situação de vulnerabilidade,
-                oferecendo recursos educacionais e culturais. Ele também promove a conscientização sobre saúde mental,
-                sustentabilidade e o uso responsável dos recursos naturais, consolidando-se como referência tanto na música quanto em ações sociais.</p>
+              <h3>Ações Sociais de Alok</h3>
+              <p>Por meio do Instituto Alok, o DJ investe em educação, combate à fome e apoio a comunidades indígenas.
+                Ele já doou milhões para projetos sociais e realizou lives beneficentes. Seu compromisso vai além da música, promovendo impacto positivo na sociedade.</p>
+                <button class="card-button">Ver Projeto</button>
             </div>
             <div class="card-right">
               <img src="https://i.pinimg.com/736x/69/01/de/6901dee869b79d83956a525212f4fe53.jpg" alt="Imagem DJ Alok Spotfy">
@@ -112,9 +95,25 @@
 
         </section>
         <section class="contact">
-          <center><h2>Contato</h2>
-  
-          AQUI VAI O CONTATO</center>
+          <h2 class="underline">Contato</h2>
+
+          <form action="" method="post" class="form-contact">
+            <div class="form-iput">
+              <label for="nome">Nome:</label>
+              <input readonly type="text" id="nome" placeholder=" Ex: Alok"/>
+            </div>
+            <div class="form-iput">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" placeholder="Ex: email@gmail.com"/>
+            </div>
+            <div class="form-iput">
+              <label for="msg">Mensagem:</label>
+              <textarea id="msg"></textarea>
+            </div>
+            <div class="button">
+              <button type="submit" class="primary">Enviar sua mensagem</button>
+            </div>
+          </form>
         </section>
     </main>
   </body>
